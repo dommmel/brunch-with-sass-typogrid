@@ -1,0 +1,21 @@
+{
+  "name": "your-app",
+  "version": "0.0.1",
+  "authors": [
+    "Your Name <your@mail>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "compass-breakpoint": "breakpoint-sass#~2.6.1",
+    "compass-mixins": "~1.0.2",
+    "modular-scale": "~2.1.1",
+    "susy": "~2.2.6"
+  }
+}

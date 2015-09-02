@@ -1,0 +1,22 @@
+{
+  "name": "your-app",
+  "description": "Description",
+  "author": "Your Name",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "start": "brunch watch --server"
+  },
+  "dependencies": {
+    "autoprefixer": "^5.2.0",
+    "sass-brunch": "^1.8.11",
+    "babel-brunch": "^5.1.2",
+    "browser-sync-brunch": "0.0.9",
+    "css-brunch": "^1.7.0",
+    "javascript-brunch": "^1.7.1",
+    "postcss-brunch": "^0.5.0"
+  }
+}

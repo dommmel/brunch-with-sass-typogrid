@@ -1,0 +1,62 @@
+$container-style: fluid;
+
+$susy: (
+  columns: 4,
+  column-width: 4em,
+  gutter-position: inside,
+);
+
+
+// Small
+// -----
+
+$medium: layout(8);
+$large: layout(12);
+
+.container {
+  @include container(100%);
+  overflow: hidden;
+}
+
+.left { @include span(3 at span(-3 wide) isolate); }
+.main { @include span(full at 1 isolate); }
+
+.show-left {
+  &:checked {
+    ~ .left { @include push(0); }
+    ~ .main { @include push(3); }
+  }
+}
+
+
+// Medium
+// ------
+
+@include susy-breakpoint(40em, $medium) {
+  .left { @include span(3 at 1 isolate); }
+  .main { @include span(5 at 4 isolate); }
+
+  .show-left {
+    &:checked {
+      ~ .left { @include push(0); }
+      ~ .main { @include push(3); }
+    }
+  }
+
+  [for="left"] { display: none; }
+}
+
+
+// Large
+// ------
+
+@include susy-breakpoint(60em, $large) {
+  .left { @include span(3 at 1 isolate); }
+  .main { @include span(6 at 4 isolate); }
+
+  .show-left {
+    &:checked {
+      ~ .main { @include push(3); }
+    }
+  }
+}

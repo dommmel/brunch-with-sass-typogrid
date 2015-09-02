@@ -1,0 +1,53 @@
+// Screen
+// ======
+
+@import "compass";
+@import "normalize";
+@import "susy";
+@import "grids";
+@import "typography";
+
+
+// Styles
+// ------
+
+.toggle-input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.toggle {
+  cursor: pointer;
+  color: blue;
+  &:hover, &:focus, &:active {
+    color: red;
+  }
+}
+
+header, footer {
+  padding: 1em 0;
+  background-color: rgba(gray, .25);
+  text-align: center;
+}
+
+[for] {
+  position: relative;
+  z-index: 10;
+  padding: 0 1em;
+}
+
+[for="left"] { float: left; }
+
+.left, .main {
+  @include transition(all 300ms);
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.left {
+  background: rgba(red, .25);
+}
+
+footer {
+  @include break;
+}
