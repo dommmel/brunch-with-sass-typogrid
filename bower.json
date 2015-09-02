@@ -16,6 +16,7 @@
     "compass-breakpoint": "breakpoint-sass#~2.6.1",
     "compass-mixins": "~1.0.2",
     "modular-scale": "~2.1.1",
+    "jquery": "~2.1.4",
     "susy": "~2.2.6"
   }
 }

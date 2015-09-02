@@ -1,12 +1,11 @@
 exports.config =
-  # See http://brunch.io/#documentation for docs.
   files:
     javascripts:
-      joinTo: 'app.js'
+      joinTo: 
+        'js/app.js': /^app/
+        'js/jquery.js' : /^bower_components\/jquery\/dist\/jquery\.js/
     stylesheets:
-      joinTo: 'app.css'
-    templates:
-      joinTo: 'app.js'
+      joinTo: 'css/app.css'
   plugins:
     sass:
       options:
@@ -19,14 +18,8 @@ exports.config =
     postcss:
       processors: [
         require('autoprefixer')
-        #require('csswring')
       ]
     babel:
       ignore: [
         /^(bower_components|vendor)/
       ]
-    uglify:
-      mangle: true
-      compress:
-        global_defs: 
-          DEBUG: true
