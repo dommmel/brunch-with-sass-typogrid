@@ -1,0 +1,1 @@
+{"version":3,"sources":["app/javascripts/app.js"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA,OAAO,CAAC,GAAG,CAAC,UAAU,CAAC,CAAC","file":"public/js/app.js","sourcesContent":["console.log(\"it works\");"]}

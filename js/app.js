@@ -109,11 +109,11 @@
   require.brunch = true;
   globals.require = require;
 })();
-(function(/* BrowserSync-Brunch */) {
-  var url = "//" + location.hostname + ":3000/browser-sync/browser-sync-client.2.1.6.js";
-  var bs = document.createElement("script");
-  bs.type = "text/javascript"; bs.async = true; bs.src = url;
-  var s = document.getElementsByTagName("script")[0];
-  s.parentNode.insertBefore(bs, s);
-})();;
+require.register("javascripts/app", function(exports, require, module) {
+"use strict";
+
+console.log("it works");
+});
+
+
 //# sourceMappingURL=app.js.map
